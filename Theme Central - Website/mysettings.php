@@ -41,10 +41,6 @@ foreach($_POST as $key => $value) {
 
 mysql_query("UPDATE users SET
 			`full_name` = '$data[name]',
-			`address` = '$data[address]',
-			`tel` = '$data[tel]',
-			`fax` = '$data[fax]',
-			`country` = '$data[country]',
 			`website` = '$data[web]'
 			 WHERE id='$_SESSION[user_id]'
 			") or die(mysql_error());
@@ -126,23 +122,6 @@ if (checkAdmin()) {
           <tr> 
             <td colspan="2"> Your Name / Company Name<br> <input name="name" type="text" id="name"  class="required" value="<? echo $row_settings['full_name']; ?>" size="50"> 
               <span class="example">Your name or company name</span></td>
-          </tr>
-          <tr> 
-            <td colspan="2">Address <span class="example">(full address with ZIP)</span><br> 
-              <textarea name="address" cols="40" rows="4" class="required" id="address"><? echo $row_settings['address']; ?></textarea> 
-            </td>
-          </tr>
-          <tr> 
-            <td>Country</td>
-            <td><input name="country" type="text" id="country" value="<? echo $row_settings['country']; ?>" ></td>
-          </tr>
-          <tr> 
-            <td width="27%">Phone</td>
-            <td width="73%"><input name="tel" type="text" id="tel" class="required" value="<? echo $row_settings['tel']; ?>"></td>
-          </tr>
-          <tr> 
-            <td>Fax</td>
-            <td><input name="fax" type="text" id="fax" value="<? echo $row_settings['fax']; ?>"></td>
           </tr>
           <tr> 
             <td>Website</td>

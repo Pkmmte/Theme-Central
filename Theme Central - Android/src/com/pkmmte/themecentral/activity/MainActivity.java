@@ -1,4 +1,6 @@
-package com.pkmmte.themecentral;
+package com.pkmmte.themecentral.activity;
+
+import com.pkmmte.themecentral.R;
 
 import android.app.Activity;
 import android.os.Bundle;

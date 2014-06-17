@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main App Colors -->
+    <color name="app_bg">#FFE5E5E5</color>
+    <color name="action_bar">#FFCE4444</color>
+    <color name="action_bar_title">#FFFFFFFF</color>
+    <color name="action_bar_subtitle">#FFFFFFFF</color>
+
+    <!-- Nav Drawer -->
+    <color name="nav_drawer_background">#FFE7E7E7</color>
+    <color name="nav_drawer_divider">#FFAAAAAA</color>
+    
+    <!-- Misc -->
+    <color name="text_primary">#FF323232</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

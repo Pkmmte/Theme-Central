@@ -20,7 +20,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border=0x7f010000;
+        public static final int border=0x7f01000c;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -29,7 +29,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_color=0x7f010002;
+        public static final int border_color=0x7f01000e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -39,11 +39,92 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int border_width=0x7f010001;
+        public static final int border_width=0x7f01000d;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
-        public static final int circularImageViewStyle=0x7f010004;
+        public static final int circularImageViewStyle=0x7f010010;
+        /**  A drawable to use as the background of the Header View 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrHeaderBackground=0x7f010002;
+        /**  The height of the Header View 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int ptrHeaderHeight=0x7f010003;
+        /**  The attribute to set in your Application/Activity theme to reference your custom theme 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderStyle=0x7f010001;
+        /**  The Text Appearance of the Header View's Title text 
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrHeaderTitleTextAppearance=0x7f010004;
+        /**  The color that the Progress Bar should be tinted with 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int ptrProgressBarColor=0x7f010005;
+        /**  The height of the Progress Bar 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int ptrProgressBarHeight=0x7f010007;
+        /**  The style of the Progress Bar 
+         <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>inside</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>outside</code></td><td>0x1</td><td></td></tr>
+</table>
+         */
+        public static final int ptrProgressBarStyle=0x7f010006;
+        /**  Text to show to prompt the user is pull (or keep pulling) 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrPullText=0x7f010008;
+        /**  Text to show to tell the user that a refresh is currently in progress 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrRefreshingText=0x7f010009;
+        /**  Text to show to tell the user has scrolled enough to refresh 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrReleaseText=0x7f01000a;
+        /** indeterminate progressbar style
+         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int ptrSmoothProgressBarStyle=0x7f01000b;
+        /**  The class to use as a View's View Delegate. Can be relative path from app's package name 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int ptrViewDelegateClass=0x7f010000;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -51,37 +132,47 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int shadow=0x7f010003;
+        public static final int shadow=0x7f01000f;
     }
     public static final class color {
-        public static final int action_bar=0x7f050001;
-        public static final int action_bar_subtitle=0x7f050003;
-        public static final int action_bar_title=0x7f050002;
+        public static final int action_bar=0x7f060002;
+        public static final int action_bar_subtitle=0x7f060004;
+        public static final int action_bar_title=0x7f060003;
         /**  Main App Colors 
          */
-        public static final int app_bg=0x7f050000;
+        public static final int app_bg=0x7f060001;
+        public static final int default_progress_bar_color=0x7f060000;
         /**  Nav Drawer 
          */
-        public static final int nav_drawer_background=0x7f050004;
-        public static final int nav_drawer_divider=0x7f050005;
-        public static final int nav_drawer_footer_pressed=0x7f050007;
-        public static final int nav_drawer_footer_text=0x7f050009;
-        public static final int nav_drawer_item_pressed=0x7f050006;
-        public static final int nav_drawer_item_text=0x7f050008;
+        public static final int nav_drawer_background=0x7f060005;
+        public static final int nav_drawer_divider=0x7f060006;
+        public static final int nav_drawer_footer_pressed=0x7f060008;
+        public static final int nav_drawer_footer_text=0x7f06000a;
+        public static final int nav_drawer_item_pressed=0x7f060007;
+        public static final int nav_drawer_item_text=0x7f060009;
         /**  Misc 
          */
-        public static final int text_primary=0x7f05000c;
-        public static final int transparent=0x7f05000b;
+        public static final int text_primary=0x7f06000d;
+        public static final int transparent=0x7f06000c;
         /**  Generic Colors 
          */
-        public static final int white=0x7f05000a;
+        public static final int white=0x7f06000b;
     }
     public static final class dimen {
-        public static final int nav_drawer_footer_text=0x7f060002;
-        public static final int nav_drawer_item_text=0x7f060001;
+        /**  Default screen margins, per the Android Design guidelines. 
+
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    
+         */
+        public static final int activity_horizontal_margin=0x7f070001;
+        public static final int activity_vertical_margin=0x7f070002;
+        public static final int nav_drawer_footer_text=0x7f070005;
+        public static final int nav_drawer_item_text=0x7f070004;
         /**  Navigation Drawer 
          */
-        public static final int nav_drawer_left_padding=0x7f060000;
+        public static final int nav_drawer_left_padding=0x7f070003;
+        public static final int ptr_progress_bar_stroke_width=0x7f070000;
     }
     public static final class drawable {
         public static final int drawer_shadow=0x7f020000;
@@ -95,57 +186,81 @@ containing a value of this type.
         public static final int selector_nav_drawer_item=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0007;
-        public static final int btnHelp=0x7f0b0004;
-        public static final int btnSettings=0x7f0b0003;
-        public static final int contentFragment=0x7f0b0001;
-        public static final int drawer_layout=0x7f0b0000;
-        public static final int drawer_list=0x7f0b0002;
-        public static final int textView1=0x7f0b0006;
-        public static final int txtTitle=0x7f0b0005;
+        public static final int action_settings=0x7f05000c;
+        public static final int btnHelp=0x7f050009;
+        public static final int btnSettings=0x7f050008;
+        public static final int contentFragment=0x7f050006;
+        public static final int drawer_layout=0x7f050005;
+        public static final int drawer_list=0x7f050007;
+        public static final int inside=0x7f050000;
+        public static final int outside=0x7f050001;
+        public static final int ptr_content=0x7f050002;
+        public static final int ptr_progress=0x7f050004;
+        public static final int ptr_text=0x7f050003;
+        public static final int textView1=0x7f05000b;
+        public static final int txtTitle=0x7f05000a;
     }
     public static final class integer {
         /**  Animations 
          */
-        public static final int quickfade_duration=0x7f070000;
+        public static final int quickfade_duration=0x7f0a0000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int drawer_footer=0x7f030001;
-        public static final int drawer_header=0x7f030002;
-        public static final int drawer_item=0x7f030003;
-        public static final int fragment_help=0x7f030004;
-        public static final int fragment_home=0x7f030005;
-        public static final int fragment_icons=0x7f030006;
-        public static final int fragment_misc=0x7f030007;
-        public static final int fragment_settings=0x7f030008;
-        public static final int fragment_themes=0x7f030009;
-        public static final int fragment_widgets=0x7f03000a;
+        public static final int default_header=0x7f030001;
+        public static final int drawer_footer=0x7f030002;
+        public static final int drawer_header=0x7f030003;
+        public static final int drawer_item=0x7f030004;
+        public static final int fragment_help=0x7f030005;
+        public static final int fragment_home=0x7f030006;
+        public static final int fragment_icons=0x7f030007;
+        public static final int fragment_misc=0x7f030008;
+        public static final int fragment_settings=0x7f030009;
+        public static final int fragment_themes=0x7f03000a;
+        public static final int fragment_widgets=0x7f03000b;
     }
     public static final class menu {
-        public static final int activity_main=0x7f0a0000;
+        public static final int activity_main=0x7f0b0000;
+        public static final int main=0x7f0b0001;
     }
     public static final class string {
+        public static final int action_settings=0x7f080004;
         /**  Core App Information 
          */
-        public static final int app_name=0x7f080000;
-        public static final int drawer_close=0x7f080002;
+        public static final int app_name=0x7f080003;
+        public static final int drawer_close=0x7f080007;
         /**  Action Bar Strings 
          */
-        public static final int drawer_open=0x7f080001;
-        public static final int help=0x7f080009;
+        public static final int drawer_open=0x7f080006;
+        public static final int hello_world=0x7f080005;
+        public static final int help=0x7f08000e;
         /**  Section Names 
          */
-        public static final int home=0x7f080003;
-        public static final int icon_packs=0x7f080005;
-        public static final int misc=0x7f080007;
-        public static final int settings=0x7f080008;
-        public static final int themes=0x7f080004;
-        public static final int widgets=0x7f080006;
+        public static final int home=0x7f080008;
+        public static final int icon_packs=0x7f08000a;
+        public static final int misc=0x7f08000c;
+        public static final int pull_to_refresh_pull_label=0x7f080000;
+        public static final int pull_to_refresh_refreshing_label=0x7f080002;
+        public static final int pull_to_refresh_release_label=0x7f080001;
+        public static final int settings=0x7f08000d;
+        public static final int themes=0x7f080009;
+        public static final int widgets=0x7f08000b;
     }
     public static final class style {
+        /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+         */
         public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
          */
         public static final int AppTheme=0x7f090001;
     }
@@ -167,7 +282,7 @@ containing a value of this type.
            @see #CircularImageView_shadow
          */
         public static final int[] CircularImageView = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+            0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f
         };
         /**
           <p>This symbol is the offset where the {@link com.pkmmte.themecentral.R.attr#border}
@@ -228,6 +343,205 @@ containing a value of this type.
           @attr name com.pkmmte.themecentral:shadow
         */
         public static final int CircularImageView_shadow = 3;
+        /** Attributes that can be used with a PullToRefreshHeader.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderBackground com.pkmmte.themecentral:ptrHeaderBackground}</code></td><td> A drawable to use as the background of the Header View </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderHeight com.pkmmte.themecentral:ptrHeaderHeight}</code></td><td> The height of the Header View </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrHeaderTitleTextAppearance com.pkmmte.themecentral:ptrHeaderTitleTextAppearance}</code></td><td> The Text Appearance of the Header View's Title text </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarColor com.pkmmte.themecentral:ptrProgressBarColor}</code></td><td> The color that the Progress Bar should be tinted with </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarHeight com.pkmmte.themecentral:ptrProgressBarHeight}</code></td><td> The height of the Progress Bar </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrProgressBarStyle com.pkmmte.themecentral:ptrProgressBarStyle}</code></td><td> The style of the Progress Bar </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrPullText com.pkmmte.themecentral:ptrPullText}</code></td><td> Text to show to prompt the user is pull (or keep pulling) </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrRefreshingText com.pkmmte.themecentral:ptrRefreshingText}</code></td><td> Text to show to tell the user that a refresh is currently in progress </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrReleaseText com.pkmmte.themecentral:ptrReleaseText}</code></td><td> Text to show to tell the user has scrolled enough to refresh </td></tr>
+           <tr><td><code>{@link #PullToRefreshHeader_ptrSmoothProgressBarStyle com.pkmmte.themecentral:ptrSmoothProgressBarStyle}</code></td><td>indeterminate progressbar style</td></tr>
+           </table>
+           @see #PullToRefreshHeader_ptrHeaderBackground
+           @see #PullToRefreshHeader_ptrHeaderHeight
+           @see #PullToRefreshHeader_ptrHeaderTitleTextAppearance
+           @see #PullToRefreshHeader_ptrProgressBarColor
+           @see #PullToRefreshHeader_ptrProgressBarHeight
+           @see #PullToRefreshHeader_ptrProgressBarStyle
+           @see #PullToRefreshHeader_ptrPullText
+           @see #PullToRefreshHeader_ptrRefreshingText
+           @see #PullToRefreshHeader_ptrReleaseText
+           @see #PullToRefreshHeader_ptrSmoothProgressBarStyle
+         */
+        public static final int[] PullToRefreshHeader = {
+            0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005,
+            0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009,
+            0x7f01000a, 0x7f01000b
+        };
+        /**
+          <p>
+          @attr description
+           A drawable to use as the background of the Header View 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrHeaderBackground
+        */
+        public static final int PullToRefreshHeader_ptrHeaderBackground = 0;
+        /**
+          <p>
+          @attr description
+           The height of the Header View 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrHeaderHeight
+        */
+        public static final int PullToRefreshHeader_ptrHeaderHeight = 1;
+        /**
+          <p>
+          @attr description
+           The Text Appearance of the Header View's Title text 
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrHeaderTitleTextAppearance
+        */
+        public static final int PullToRefreshHeader_ptrHeaderTitleTextAppearance = 2;
+        /**
+          <p>
+          @attr description
+           The color that the Progress Bar should be tinted with 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrProgressBarColor
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarColor = 3;
+        /**
+          <p>
+          @attr description
+           The height of the Progress Bar 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrProgressBarHeight
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarHeight = 5;
+        /**
+          <p>
+          @attr description
+           The style of the Progress Bar 
+
+
+          <p>Must be one or more (separated by '|') of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>inside</code></td><td>0x0</td><td></td></tr>
+<tr><td><code>outside</code></td><td>0x1</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrProgressBarStyle
+        */
+        public static final int PullToRefreshHeader_ptrProgressBarStyle = 4;
+        /**
+          <p>
+          @attr description
+           Text to show to prompt the user is pull (or keep pulling) 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrPullText
+        */
+        public static final int PullToRefreshHeader_ptrPullText = 6;
+        /**
+          <p>
+          @attr description
+           Text to show to tell the user that a refresh is currently in progress 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrRefreshingText
+        */
+        public static final int PullToRefreshHeader_ptrRefreshingText = 7;
+        /**
+          <p>
+          @attr description
+           Text to show to tell the user has scrolled enough to refresh 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrReleaseText
+        */
+        public static final int PullToRefreshHeader_ptrReleaseText = 8;
+        /**
+          <p>
+          @attr description
+          indeterminate progressbar style
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrSmoothProgressBarStyle
+        */
+        public static final int PullToRefreshHeader_ptrSmoothProgressBarStyle = 9;
+        /** Attributes that can be used with a PullToRefreshView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PullToRefreshView_ptrViewDelegateClass com.pkmmte.themecentral:ptrViewDelegateClass}</code></td><td> The class to use as a View's View Delegate.</td></tr>
+           </table>
+           @see #PullToRefreshView_ptrViewDelegateClass
+         */
+        public static final int[] PullToRefreshView = {
+            0x7f010000
+        };
+        /**
+          <p>
+          @attr description
+           The class to use as a View's View Delegate. Can be relative path from app's package name 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          <p>This is a private symbol.
+          @attr name com.pkmmte.themecentral:ptrViewDelegateClass
+        */
+        public static final int PullToRefreshView_ptrViewDelegateClass = 0;
         /** Attributes that can be used with a Theme.
            <p>Includes the following attributes:</p>
            <table>
@@ -239,7 +553,7 @@ containing a value of this type.
            @see #Theme_circularImageViewStyle
          */
         public static final int[] Theme = {
-            0x7f010004
+            0x7f010010
         };
         /**
           <p>This symbol is the offset where the {@link com.pkmmte.themecentral.R.attr#circularImageViewStyle}

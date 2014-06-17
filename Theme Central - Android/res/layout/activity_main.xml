@@ -15,6 +15,8 @@
         android:layout_gravity="start"
         android:background="@color/nav_drawer_background"
         android:divider="@color/transparent"
-        android:dividerHeight="0dp" />
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@drawable/selector_nav_drawer_item" />
 
 </com.pkmmte.themecentral.view.PkDrawerLayout>

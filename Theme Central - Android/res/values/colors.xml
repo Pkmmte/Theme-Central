@@ -8,11 +8,18 @@
     <color name="action_bar_subtitle">#FFFFFFFF</color>
 
     <!-- Nav Drawer -->
-    <color name="nav_drawer_background">#FFE7E7E7</color>
-    <color name="nav_drawer_divider">#FFAAAAAA</color>
+    <color name="nav_drawer_background">#FFF7F7F7</color>
+    <color name="nav_drawer_divider">#FFEBEBEB</color>
+    <color name="nav_drawer_item_pressed">#FFE6E6E6</color>
+    <color name="nav_drawer_footer_pressed">#FFE1E1E1</color>
+    <color name="nav_drawer_item_text">#FF484848</color>
+    <color name="nav_drawer_footer_text">#FF6D6D6D</color>
+    
+    <!-- Generic Colors -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
     
     <!-- Misc -->
     <color name="text_primary">#FF323232</color>
-    <color name="transparent">#00000000</color>
 
 </resources>

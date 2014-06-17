@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Core App Information -->
     <string name="app_name">Theme Central</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    
+    <!-- Action Bar Strings -->
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    
+    <!-- Section Names -->
+    <string name="home">Home</string>
+    <string name="themes">Themes</string>
+    <string name="icon_packs">Icon Packs</string>
+    <string name="widgets">Widgets</string>
+    <string name="misc">Misc</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
 
 </resources>

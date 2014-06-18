@@ -13,13 +13,14 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.pkmmte.themecentral.R;
@@ -31,7 +32,11 @@ import com.pkmmte.themecentral.fragment.MiscFragment;
 import com.pkmmte.themecentral.fragment.SettingsFragment;
 import com.pkmmte.themecentral.fragment.ThemesFragment;
 import com.pkmmte.themecentral.fragment.WidgetsFragment;
+import com.pkmmte.themecentral.util.BlurTransform;
+import com.pkmmte.themecentral.util.RoundTransform;
+import com.pkmmte.themecentral.view.CircularImageView;
 import com.pkmmte.themecentral.view.PkDrawerLayout;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends FragmentActivity
 {
@@ -39,14 +44,14 @@ public class MainActivity extends FragmentActivity
 	private static final String TAG = "MainActivity";
 	
 	// Section Constants
-	public static final int ACCOUNT = 0;
-	public static final int HOME = 1;
-	public static final int THEMES = 2;
-	public static final int ICONS = 3;
-	public static final int WIDGETS = 4;
-	public static final int MISC = 5;
-	public static final int SETTINGS = 6;
-	public static final int HELP = 7;
+	public static final int ACCOUNT = -1;
+	public static final int HOME = 0;
+	public static final int THEMES = 1;
+	public static final int ICONS = 2;
+	public static final int WIDGETS = 3;
+	public static final int MISC = 4;
+	public static final int SETTINGS = 5;
+	public static final int HELP = 6;
 	
 	// ActionBar & Title
 	private ActionBar mActionBar;
@@ -62,6 +67,10 @@ public class MainActivity extends FragmentActivity
 	private int currentSection;
 	private List<Fragment> mSections;
 	private FragmentManager mFragmentManager;
+	
+	// Views
+	private CircularImageView imgAvatar;
+	private ImageView imgBanner;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -97,14 +106,6 @@ public class MainActivity extends FragmentActivity
 		super.onConfigurationChanged(newConfig);
 		
 		mDrawerToggle.onConfigurationChanged(newConfig);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu)
-	{
-		getMenuInflater().inflate(R.menu.activity_main, menu);
-		
-		return true;
 	}
 
 	@Override
@@ -151,7 +152,6 @@ public class MainActivity extends FragmentActivity
 	
 	private void initNavDrawer()
 	{
-		Log.d("WTF", "" + (mDrawerLayout == null));
 		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 		
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.drawable.ic_drawer_indicator, R.string.drawer_open, R.string.drawer_close) {
@@ -171,31 +171,35 @@ public class MainActivity extends FragmentActivity
 		mDrawerLayout.setDrawerListener(mDrawerToggle);
 
 		mDrawerAdapter = new NavDrawerAdapter(MainActivity.this);
-		mDrawerAdapter.addItem(getString(R.string.home));
-		mDrawerAdapter.addItem(getString(R.string.themes));
-		mDrawerAdapter.addItem(getString(R.string.icon_packs));
-		mDrawerAdapter.addItem(getString(R.string.widgets));
-		mDrawerAdapter.addItem(getString(R.string.misc));
+		mDrawerAdapter.addItem(getResources().getString(R.string.home));
+		mDrawerAdapter.addItem(getResources().getString(R.string.themes));
+		mDrawerAdapter.addItem(getResources().getString(R.string.icon_packs));
+		mDrawerAdapter.addItem(getResources().getString(R.string.widgets));
+		mDrawerAdapter.addItem(getResources().getString(R.string.misc));
 
-		//
+		// Add header
 		View headerView = ((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.drawer_header, null, false);
 		mDrawerList.addHeaderView(headerView);
 		
-		//
+		// Add footer
 		View footerView = ((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.drawer_footer, null, false);
 		mDrawerList.addFooterView(footerView);
 		
-		//
+		// Initialize header views
+		imgAvatar = (CircularImageView) headerView.findViewById(R.id.imgAvatar);
+		imgBanner = (ImageView) headerView.findViewById(R.id.imgBanner);
+		
+		// Set list adapter
 		mDrawerList.setAdapter(mDrawerAdapter);
 		
-		//
+		// Apply onClick listeners
 		mDrawerList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> adapterView, View view, int position, long index) {
-				selectPage(position);
+				selectPage(position - mDrawerList.getHeaderViewsCount());
 			}
 		});
-		/*((Button) footerView.findViewById(R.id.btnSettings)).setOnClickListener(new OnClickListener() {
+		((Button) footerView.findViewById(R.id.btnSettings)).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				selectPage(SETTINGS);
@@ -206,7 +210,11 @@ public class MainActivity extends FragmentActivity
 			public void onClick(View v) {
 				selectPage(HELP);
 			}
-		});*/
+		});
+		
+		// TODO Test Remove
+		Picasso.with(this).load(R.drawable.default_avatar).transform(new RoundTransform(0,0)).into(imgAvatar);
+		Picasso.with(this).load(R.drawable.drawer_default_banner).transform(new BlurTransform(this)).into(imgBanner);
 	}
 	
 	public void selectPage(int selection)
@@ -238,11 +246,11 @@ public class MainActivity extends FragmentActivity
 				break;
 			case SETTINGS:
 				transaction.replace(R.id.contentFragment, mSections.get(SETTINGS));
-				mTitle = mDrawerAdapter.getItem(SETTINGS);
+				mTitle = getResources().getString(R.string.settings);
 				break;
 			case HELP:
 				transaction.replace(R.id.contentFragment, mSections.get(HELP));
-				mTitle = mDrawerAdapter.getItem(HELP);
+				mTitle = getResources().getString(R.string.help);
 				break;
 		}
 		

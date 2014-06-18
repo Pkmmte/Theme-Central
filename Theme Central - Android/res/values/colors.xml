@@ -6,7 +6,10 @@
     <color name="action_bar">#FFCE4444</color>
     <color name="action_bar_title">#FFFFFFFF</color>
     <color name="action_bar_subtitle">#FFFFFFFF</color>
-
+	
+    <!-- Action Bar -->
+    <color name="ab_menu_divider">#FFD7D7D7</color>
+    
     <!-- Nav Drawer -->
     <color name="nav_drawer_background">#FFF7F7F7</color>
     <color name="nav_drawer_divider">#FFEBEBEB</color>
@@ -15,8 +18,12 @@
     <color name="nav_drawer_item_text">#FF484848</color>
     <color name="nav_drawer_footer_text">#FF6D6D6D</color>
     
+    <!-- Holo Colors -->
+    <color name="holo_blue_light_transparent">#4433B5E5</color>
+    
     <!-- Generic Colors -->
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
     <color name="transparent">#00000000</color>
     
     <!-- Misc -->

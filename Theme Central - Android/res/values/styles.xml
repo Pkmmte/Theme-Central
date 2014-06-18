@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
+
+    <!-- Action Bar -->
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/texture_action_bar</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/ActionBar.SubTitleTextStyle</item>
+        <item name="android:dropDownListViewStyle">@style/ActionBar.DropDownListView</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ActionBar.SubTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ActionBar.DropDownListView" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@color/ab_menu_divider</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
 </resources>

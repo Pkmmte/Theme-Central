@@ -135,28 +135,35 @@ containing a value of this type.
         public static final int shadow=0x7f01000f;
     }
     public static final class color {
+        /**  Action Bar 
+         */
+        public static final int ab_menu_divider=0x7f060005;
         public static final int action_bar=0x7f060002;
         public static final int action_bar_subtitle=0x7f060004;
         public static final int action_bar_title=0x7f060003;
         /**  Main App Colors 
          */
         public static final int app_bg=0x7f060001;
+        public static final int black=0x7f06000e;
         public static final int default_progress_bar_color=0x7f060000;
+        /**  Holo Colors 
+         */
+        public static final int holo_blue_light_transparent=0x7f06000c;
         /**  Nav Drawer 
          */
-        public static final int nav_drawer_background=0x7f060005;
-        public static final int nav_drawer_divider=0x7f060006;
-        public static final int nav_drawer_footer_pressed=0x7f060008;
-        public static final int nav_drawer_footer_text=0x7f06000a;
-        public static final int nav_drawer_item_pressed=0x7f060007;
-        public static final int nav_drawer_item_text=0x7f060009;
+        public static final int nav_drawer_background=0x7f060006;
+        public static final int nav_drawer_divider=0x7f060007;
+        public static final int nav_drawer_footer_pressed=0x7f060009;
+        public static final int nav_drawer_footer_text=0x7f06000b;
+        public static final int nav_drawer_item_pressed=0x7f060008;
+        public static final int nav_drawer_item_text=0x7f06000a;
         /**  Misc 
          */
-        public static final int text_primary=0x7f06000d;
-        public static final int transparent=0x7f06000c;
+        public static final int text_primary=0x7f060010;
+        public static final int transparent=0x7f06000f;
         /**  Generic Colors 
          */
-        public static final int white=0x7f06000b;
+        public static final int white=0x7f06000d;
     }
     public static final class dimen {
         public static final int nav_drawer_footer_text=0x7f070003;
@@ -167,30 +174,39 @@ containing a value of this type.
         public static final int ptr_progress_bar_stroke_width=0x7f070000;
     }
     public static final class drawable {
-        public static final int drawer_shadow=0x7f020000;
-        public static final int ic_drawer_indicator=0x7f020001;
-        public static final int ic_help=0x7f020002;
-        public static final int ic_help_small=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_settings=0x7f020005;
-        public static final int ic_settings_small=0x7f020006;
-        public static final int selector_nav_drawer_footer=0x7f020007;
-        public static final int selector_nav_drawer_item=0x7f020008;
+        public static final int ab_pattern=0x7f020000;
+        public static final int default_avatar=0x7f020001;
+        public static final int drawer_default_banner=0x7f020002;
+        public static final int drawer_shadow=0x7f020003;
+        public static final int ic_drawer_indicator=0x7f020004;
+        public static final int ic_help=0x7f020005;
+        public static final int ic_help_small=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int ic_settings=0x7f020008;
+        public static final int ic_settings_small=0x7f020009;
+        public static final int selector_nav_drawer_footer=0x7f02000a;
+        public static final int selector_nav_drawer_header=0x7f02000b;
+        public static final int selector_nav_drawer_item=0x7f02000c;
+        public static final int texture_action_bar=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f05000c;
+        public static final int action_settings=0x7f050010;
         public static final int btnHelp=0x7f050009;
         public static final int btnSettings=0x7f050008;
         public static final int contentFragment=0x7f050006;
         public static final int drawer_layout=0x7f050005;
         public static final int drawer_list=0x7f050007;
+        public static final int imgAvatar=0x7f05000b;
+        public static final int imgBanner=0x7f05000a;
         public static final int inside=0x7f050000;
         public static final int outside=0x7f050001;
         public static final int ptr_content=0x7f050002;
         public static final int ptr_progress=0x7f050004;
         public static final int ptr_text=0x7f050003;
-        public static final int textView1=0x7f05000b;
-        public static final int txtTitle=0x7f05000a;
+        public static final int textView1=0x7f05000f;
+        public static final int txtEmail=0x7f05000d;
+        public static final int txtTitle=0x7f05000e;
+        public static final int txtUsername=0x7f05000c;
     }
     public static final class integer {
         /**  Animations 
@@ -236,10 +252,16 @@ containing a value of this type.
         public static final int widgets=0x7f080009;
     }
     public static final class style {
-        public static final int AppBaseTheme=0x7f0a0000;
+        /**  Action Bar 
+         */
+        public static final int ActionBar=0x7f0a0000;
+        public static final int ActionBar_DropDownListView=0x7f0a0003;
+        public static final int ActionBar_SubTitleTextStyle=0x7f0a0002;
+        public static final int ActionBar_TitleTextStyle=0x7f0a0001;
+        public static final int AppBaseTheme=0x7f0a0004;
         /**  Application theme. 
          */
-        public static final int AppTheme=0x7f0a0001;
+        public static final int AppTheme=0x7f0a0005;
     }
     public static final class styleable {
         /** Attributes that can be used with a CircularImageView.

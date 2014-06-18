@@ -159,19 +159,11 @@ containing a value of this type.
         public static final int white=0x7f06000b;
     }
     public static final class dimen {
-        /**  Default screen margins, per the Android Design guidelines. 
-
-         Customize dimensions originally defined in res/values/dimens.xml (such as
-         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
-    
-         */
-        public static final int activity_horizontal_margin=0x7f070001;
-        public static final int activity_vertical_margin=0x7f070002;
-        public static final int nav_drawer_footer_text=0x7f070005;
-        public static final int nav_drawer_item_text=0x7f070004;
+        public static final int nav_drawer_footer_text=0x7f070003;
+        public static final int nav_drawer_item_text=0x7f070002;
         /**  Navigation Drawer 
          */
-        public static final int nav_drawer_left_padding=0x7f070003;
+        public static final int nav_drawer_left_padding=0x7f070001;
         public static final int ptr_progress_bar_stroke_width=0x7f070000;
     }
     public static final class drawable {
@@ -203,7 +195,7 @@ containing a value of this type.
     public static final class integer {
         /**  Animations 
          */
-        public static final int quickfade_duration=0x7f0a0000;
+        public static final int quickfade_duration=0x7f090000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -221,48 +213,33 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int activity_main=0x7f0b0000;
-        public static final int main=0x7f0b0001;
     }
     public static final class string {
-        public static final int action_settings=0x7f080004;
         /**  Core App Information 
          */
         public static final int app_name=0x7f080003;
-        public static final int drawer_close=0x7f080007;
+        public static final int drawer_close=0x7f080005;
         /**  Action Bar Strings 
          */
-        public static final int drawer_open=0x7f080006;
-        public static final int hello_world=0x7f080005;
-        public static final int help=0x7f08000e;
+        public static final int drawer_open=0x7f080004;
+        public static final int help=0x7f08000c;
         /**  Section Names 
          */
-        public static final int home=0x7f080008;
-        public static final int icon_packs=0x7f08000a;
-        public static final int misc=0x7f08000c;
+        public static final int home=0x7f080006;
+        public static final int icon_packs=0x7f080008;
+        public static final int misc=0x7f08000a;
         public static final int pull_to_refresh_pull_label=0x7f080000;
         public static final int pull_to_refresh_refreshing_label=0x7f080002;
         public static final int pull_to_refresh_release_label=0x7f080001;
-        public static final int settings=0x7f08000d;
-        public static final int themes=0x7f080009;
-        public static final int widgets=0x7f08000b;
+        public static final int settings=0x7f08000b;
+        public static final int themes=0x7f080007;
+        public static final int widgets=0x7f080009;
     }
     public static final class style {
-        /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-         */
-        public static final int AppBaseTheme=0x7f090000;
+        public static final int AppBaseTheme=0x7f0a0000;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
- Application theme. 
          */
-        public static final int AppTheme=0x7f090001;
+        public static final int AppTheme=0x7f0a0001;
     }
     public static final class styleable {
         /** Attributes that can be used with a CircularImageView.
